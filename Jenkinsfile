@@ -2,15 +2,6 @@ pipeline {
     agent any
 
    stages {
-       stage('cluster') {
-            steps {
-               withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'kubecofig', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
-    // some block
-}
-    
-                
-            }
-        }
       
          stage('deploy') {
             steps {
